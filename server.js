@@ -13,7 +13,7 @@ app.use(express.json());
 // defining origin,and methods
 const corsOption = {
   // defining origin,and methods
-      origin:["http://localhost:5173","https://vipkitchen.in/contact","https://vipkitchen.in/"],
+      origin:["http://localhost:5173","https://vipkitchen.in/"],
       method:"GET,POST,PUT,DELETE,PATCH,HEAD",
       credentials:true
   }
