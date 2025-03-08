@@ -35,6 +35,7 @@ const contactSchema = new mongoose.Schema({
   phone: String,
   email: String,
   message: String,
+  service:String
 });
 
 const Contact = mongoose.model("Contact", contactSchema);
