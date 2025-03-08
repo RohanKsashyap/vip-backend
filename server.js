@@ -13,13 +13,15 @@ app.use(express.json());
 // defining origin,and methods
 const corsOption = {
   // defining origin,and methods
-      origin:["http://localhost:5173","https://vipkitchen.in/"],
+      origin:["http://localhost:5173","https://vipkitchen.in"],
       method:"GET,POST,PUT,DELETE,PATCH,HEAD",
+      allowedHeaders:["Content-Type", "Authorization"],
       credentials:true
   }
 
 
 app.use(cors(corsOption));
+app.options("*", cors(corsOption));
 
 // Connect to MongoDB
 mongoose.connect(process.env.MONGO_URI, {
