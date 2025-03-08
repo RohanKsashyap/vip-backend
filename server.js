@@ -14,7 +14,7 @@ app.use(express.json());
 const corsOption = {
   // defining origin,and methods
       origin:["https://vipkitchen.in"],
-      method:"GET,POST,PUT,DELETE,PATCH,HEAD",
+      methods:"GET,POST,PUT,DELETE,PATCH,HEAD",
       allowedHeaders:["Content-Type", "Authorization"],
       credentials:true
   }
